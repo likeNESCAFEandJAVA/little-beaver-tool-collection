@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = little-beaver-tool-collection
 TEMPLATE = app
-
+CONFIG+=c++11
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -25,10 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    command/command.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    command/a.h \
+    window/a.h \
+    command/command.h \
+    window/AzurLane/a.h \
+    window/a.h
 
 FORMS += \
         mainwindow.ui
